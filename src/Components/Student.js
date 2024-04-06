@@ -3,7 +3,7 @@
 const students = [
     {
       id: 1,
-      name: "kichu",
+      name: "Anu",
       ticketNumber: "1234",
       ticketTopic: "JavaScript Basics",
       examGrade: 4.5,
@@ -12,7 +12,7 @@ const students = [
     },
     {
       id: 2,
-      name: "Anandh",
+      name: "chiku",
       ticketNumber: "5678",
       ticketTopic: "Arrays",
       examGrade: 3.8,
@@ -21,25 +21,25 @@ const students = [
     },
     {
         id: 3,
-        name: "Anuradha",
+        name: "kichu",
         ticketNumber: "4567",
         ticketTopic: "Arrays",
-        examGrade: 3.8,
+        examGrade: 5.6,
         ratingGrade: 4.2,
         comments: "Work hard"
       },
       {
         id: 4,
-        name: "Raghav",
+        name: "pichu",
         ticketNumber: "7890",
         ticketTopic: "Arrays",
-        examGrade: 3.8,
+        examGrade: 7.5,
         ratingGrade: 4.2,
         comments: "Work hard"
       },
       {
         id: 5,
-        name: "Maggi",
+        name: "Rohit",
         ticketNumber: "2345",
         ticketTopic: "Arrays",
         examGrade: 3.8,
@@ -48,7 +48,7 @@ const students = [
       },
       {
         id: 6,
-        name: "satwik",
+        name: "sam",
         ticketNumber: "5602",
         ticketTopic: "Arrays",
         examGrade: 8.5,
@@ -57,7 +57,7 @@ const students = [
       },
       {
         id: 7,
-        name: "Sasi Kumar",
+        name: "vam",
         ticketNumber: "4839",
         ticketTopic: "Arrays",
         examGrade: 6.8,
