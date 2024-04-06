@@ -1,5 +1,6 @@
 // src/Table.js
 
+import './Table.css';
 import React, { useState } from 'react';
 import students from './Student';
 
@@ -64,7 +65,7 @@ function Table() {
           <option value="finalGrade">Final Grade</option>
         </select>
       </label>
-      <table>
+      <table className="styled-table"> {/* Add className for table styling */}
         <thead>
           <tr>
             <th>№</th>
