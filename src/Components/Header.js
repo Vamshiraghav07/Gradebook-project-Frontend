@@ -6,7 +6,7 @@ function Header() {
     <header>
       <h1>Gradebook Project</h1>
       <p>Date: {new Date().toLocaleDateString()}</p>
-      {/* Add more header information as needed */}
+      {}
     </header>
   );
 }
