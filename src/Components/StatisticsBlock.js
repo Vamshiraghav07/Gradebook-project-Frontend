@@ -1,4 +1,4 @@
-// src/StatisticsBlock.js
+
 
 import React, { useState } from 'react';
 import students from './Student';
