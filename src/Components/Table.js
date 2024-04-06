@@ -12,6 +12,8 @@ function Table() {
 
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
+    setSelectedStudent(null); // Reset selected student when filter changes
+    setSelectedRow(null); // Reset selected row when filter changes
   };
 
   const handleSortChange = (event) => {
@@ -26,6 +28,18 @@ function Table() {
   const handleCommentsClick = (student) => {
     setSelectedStudent(student); // Set the selected student when Comments button is clicked
   };
+
+  // Filter students based on selected filter
+  const filteredStudents = students.filter(student => {
+    if (filter === 'all') {
+      return true;
+    } else if (filter === 'pass') {
+      return (0.6 * student.examGrade + 0.4 * student.ratingGrade) >= 4;
+    } else if (filter === 'fail') {
+      return (0.6 * student.examGrade + 0.4 * student.ratingGrade) < 4;
+    }
+    return true;
+  });
 
   return (
     <div>
@@ -58,7 +72,7 @@ function Table() {
           </tr>
         </thead>
         <tbody>
-          {students.map((student, index) => ( // Iterate over original students array
+          {filteredStudents.map((student, index) => ( // Iterate over filtered students array
             <tr 
               key={student.id} 
               className={selectedRow === index ? 'selected-row' : ''} // Apply selected-row class if this row is selected
